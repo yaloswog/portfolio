@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@font-face {
+    font-family: madeTommy;
+    src: url(/assets/fonts/MADE_TOMMY_REG.otf);
+  }
+/* Variables */
+:root {
+  --font-family: "madeTommy", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #262634;
+  --primary-color: #fff;
+  --secondary-color: #F9A826;
+  --primary-shadow: #8c8c9e;
+  --secondary-shadow: #91774d;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+  
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+
+  .hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  
+  .bio {
+    width: 30rem;
+    padding: 0.625rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px -5px var(--primary-shadow);
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+  
+  .bio a {
+    --primary-color: #F9A826;
+  }
+
+  .more-about {
+    background-color: var(--secondary-color);
+    padding: 1rem 6rem;
+  }
+  
+  .more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+
+  .skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px -5px var(--primary-shadow);
+    padding: 10px;
+    margin: 10px;
+}
