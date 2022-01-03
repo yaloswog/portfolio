@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="assets/css/1.css" />
+
+    <!--SCRIPT-->
+
+    <script>
+      (function() {
+      var sheet = document.createElement('link');
+      sheet.rel="stylesheet";
+      sheet.href="/assets/css/" + (Math.floor(Math.random()*5)+1) + '.css';
+      document.getElementsByTagName('head')[0].appendChild(sheet);
+      })();
+    </script>
 
     <!-- Favicons -->
     <link
@@ -35,8 +46,8 @@
         <h1>ew</h1>
         <ul class="navigation">
             <li><a href="#about" class="nav-link">about</a></li>
-            <li><a href="#skills" class="nav-link">skills</a></li>
-            <li><a href="#projects" class="nav-link">projects</a></li>
+            <li><a href="#goals" class="nav-link">goals</a></li>
+            <li><a href="#progress" class="nav-link">progress</a></li>
             <li><a href="#contact" class="nav-link">contact</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
@@ -46,7 +57,7 @@
     <!-- Hero Section -->
     <section class="hero" id="about">
         <img
-          src="assets/images/dev_1.svg"
+          src="assets/images/dev_2.svg"
           alt="jane-doe"
           loading="lazy"
           class="hero-img"
@@ -54,7 +65,7 @@
         <div class="bio animate__animated animate__shakeX">
           <h2 class="bio-title">about me</h2>
           <p class="bio-text">
-            hi there, i'm elijah otherwise known as yalo in discord and other platforms.
+            hi, i'm elijah otherwise known as yalo in discord and other platforms.
             i've put together this website to document my #100daysofcode journey. i followed
             the freecodecamp portfolio website tutorial to build this,
             <a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/">
@@ -77,34 +88,56 @@
         <p>
         </p>
     </section>
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">skills in progress</h2>
-        <h3>(in order)</h3>
-  
-        <div class="skills-wrapper">
+    <!-- Goals section -->
+    <section class="goals" id="goals">
+        <h2 class="goals-header">goals</h2>
+        <div class="goals-wrapper">
           <div class="first-set animate__animated animate__pulse">
+            <a href="https://www.w3schools.com/html/" target="_blank">
             <img
               src="assets/icons/icons8-html-5.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
+            </a>
+            <a href="https://www.w3schools.com/css/" target="_blank">
             <img
               src="assets/icons/icons8-css3.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
+            </a>
+            <a href="https://www.javascript.com/" target="_blank">
             <img
               src="assets/icons/icons8-javascript.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
+            </a>
+            <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+            <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
           </div>
   
           <div class="second-set animate__animated animate__pulse">
+            <img
+            src="assets/icons/icons8-github.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
             <img
               src="assets/icons/icons8-python.svg"
               alt=""
@@ -123,11 +156,68 @@
               loading="lazy"
               class="icon icon-card"
             />
+            <img
+            src="assets/icons/icons8-google-firebase-console.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
           </div>
         </div>
     </section>
-    <!-- Projects section -->
-
+    <!-- Progress section -->
+    <section class="progress" id="progress">
+      <h2 class="progress-title">recent progress</h2>
+      <div class="progress-container">
+        <div class="daily-progress-container progress-card">
+          <a href="https://neumorphism.io/" target="_blank" class="progress-link">
+          <img
+            src="assets/images/progress/day 3.png"
+            alt="day 3"
+            loading="lazy"
+            class="progress-pic"
+          />
+          </a>
+          <h3 class="progress-title">day 3</h3>
+          <p class="progress-details">
+            morning well spent, made this beautiful calculator design
+            using an amazing shadow tool, link below
+          </p>
+          <a href="https://neumorphism.io/" target="_blank" class="progress-link">try it yourself</a>
+        </div>
+        <div class="daily-progress-container progress-card">
+          <a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/" target="_blank" class="progress-link">
+            <img
+            src="assets/images/progress/day 2.png"
+            alt="day 2"
+            loading="lazy"
+            class="progress-pic"
+            />
+          </a>
+          <h3 class="progress-title">day 2</h3>
+          <p class="progress-details">
+            spent hours learning and building portfolio/blog site using a freecodecamp tutorial
+          </p>
+          <a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/" target="_blank" class="progress-link">try it yourself</a>
+        </div>
+        <div class="daily-progress-container progress-card">
+          <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="progress-link">
+          <img
+            src="assets/images/progress/day 1.png"
+            alt="day 1"
+            loading="lazy"
+            class="progress-pic"
+          />
+          </a>
+          <h3 class="progress-title">day 1</h3>
+          <p class="progress-details">
+            started the freecodecamp responsive web design course again
+          </p>
+          <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="progress-link">try it yourself</a>
+        </div>
+      </div>
+      
+    </section>
     <!-- Contact section -->
 
     <!-- Social accounts - Fixed to the right -->
